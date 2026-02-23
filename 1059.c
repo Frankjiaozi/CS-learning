@@ -63,10 +63,6 @@ int main()
             ar_fm[k]=temp;
             k++;
         }
-        for(int i=0;i<2*n;i++)
-        {
-            printf("%d ",ar_fm[i]);
-        }
         //printf("\n");
         //revert_arr(ar_fm,n);
         //3,9,11,15,20,22     
@@ -83,7 +79,11 @@ int main()
             }
             else if(ar_fm[p_fm]>ar_m[p_m])
             {
-
+                p_m++;
+            }
+            else if(ar_fm[p_fm]<ar_m[p_m])
+            {
+                p_fm++;
             }
         }
 
